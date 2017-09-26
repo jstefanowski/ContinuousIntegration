@@ -1,4 +1,4 @@
-version: 4
+version: 5
 jobs:
   build:
     working_directory: ~/code
@@ -30,4 +30,4 @@ jobs:
           path: app/build/test-results
       - run:
           name: Upload to crashlytics
-          command: ./gradlew assembleRelease uploadCrashlyticsDistributionRelease
+          command: ./gradlew assembleRelease crashlyticsUploadDistributionRelease
