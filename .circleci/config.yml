@@ -15,7 +15,7 @@ jobs:
           command: chmod +x gradlew
       - run:
           name: Create fabric file
-          command: printf 'apiKey=$FABRIC_API_KEY\napiSecret=$FABRIC_API_SECRET' > ~/code/fabric.properties
+          command: printf "apiKey=%s\napiSecret=%s" "$FABRIC_API_KEY" "$FABRIC_API_SECRET" > fabric.properties
       - run:
           name: Download Dependencies
           command: ./gradlew androidDependencies
