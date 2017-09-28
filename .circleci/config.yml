@@ -44,4 +44,6 @@ workflows:
       - build:
           filters:
             tags:
-              only: v1.5
+              only: /^config-test.*/
+            branches:
+              ignore: /.*/
