@@ -19,9 +19,9 @@ android {
     signingConfigs {
         config {
             keyAlias 'circleci'
-            keyPassword 'simplekey'
-            storeFile file('samplekey.jks')
-            storePassword 'simplekey'
+            keyPassword 'samplekey'
+            storeFile file('../samplekey.jks')
+            storePassword 'samplekey'
         }
     }
     compileSdkVersion 25
